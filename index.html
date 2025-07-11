@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body class = "p-4 bg-light">
+    <div class = "container mb-1"></div>
     <div class="card text-left">
         <div class="card-header">
             <h1>Payment form example</h1>
@@ -16,6 +17,7 @@
             Some fields are missing
         </div>
         <form>
+            <div class = "container mb-1">
             <div class = "row">
                 <div class="col-md-4">
                     <label for="number">
@@ -133,29 +135,29 @@
                     <label for = "payment">
                         We accept:
                     </label><br>
-                    <div class = "d-flex bg-secondary p-3 gap-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mastercard" id="mastercard1">
-                            <label class="form-check-label" for="mastercard1">
-                                <i class="fa-brands fa-cc-mastercard" style="color: #d4d4d4;"></i>
+                    <div class = "d-flex gap-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="mastercard">
+                            <label class="form-check-label" for="mastercard">
+                                <i class="fa-brands fa-cc-mastercard" style="color: #000000;"></i>
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="visa" id="visa1">
-                            <label class="form-check-label" for="visa1">
-                                <i class="fa-brands fa-cc-visa" style="color: #d4d4d4;"></i>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="visa">
+                            <label class="form-check-label" for="visa">
+                                <i class="fa-brands fa-cc-visa" style="color: #000000;"></i>
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="dinersclub" id="dinersclub1">
-                            <label class="form-check-label" for="dinersclub1">
-                                <i class="fa-brands fa-cc-diners-club" style="color: #d4d4d4;"></i>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="dinersclub">
+                            <label class="form-check-label" for="dinersclub">
+                                <i class="fa-brands fa-cc-diners-club" style="color: #000000;"></i>
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="americanExpress" id="americanExpress1">
-                            <label class="form-check-label" for="americanExpress1">
-                                <i class="fa-brands fa-cc-amex" style="color: #d4d4d4;"></i>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="americanExpress">
+                            <label class="form-check-label" for="americanExpress">
+                                <i class="fa-brands fa-cc-amex" style="color: #000000;"></i>
                             </label>
                         </div>
                     </div>
@@ -168,8 +170,9 @@
                     <textarea class="form-control float-end" id="message" rows="3"></textarea>
                 </div>
             </div>
-
+            </div>
         </form>
+        <br>
         <div class="card-footer text-right">
             <!-- <button type="submit" style="background-color: blue; color:white; float: right">Send</button>
             <input type = "submit" value = "Cancel" style = "float: right;"/> -->
